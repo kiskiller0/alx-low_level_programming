@@ -1,3 +1,2 @@
 #!/bin/bash
 gcc -c $CFILE -o "$(echo $CFILE | rev | cut -d '.' -f 2-1000 | rev).o"
-
