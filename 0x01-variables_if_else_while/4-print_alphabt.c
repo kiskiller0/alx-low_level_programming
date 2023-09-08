@@ -13,9 +13,9 @@ int main(void)
 
 	while (a != 'z' + 1)
 	{
-		if(a == 'q' || a == 'e')
+		if (a == 'q' || a == 'e')
 		{
-			a ++;
+			a++;
 			continue;
 		}
 
