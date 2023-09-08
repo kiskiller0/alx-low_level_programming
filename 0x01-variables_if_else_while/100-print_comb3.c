@@ -15,7 +15,14 @@ int main(void)
 	while (b != '9' + 1)
 	{
 		putchar(b);
-		putchar(a++);
+		if (a == b)
+		{
+			a++;
+		}
+		else
+		{
+			putchar(a++);
+		}
 
 		if (a == '9' + 1)
 		{
