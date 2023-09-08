@@ -17,7 +17,7 @@ int main(void)
 		if (a == '9' + 1)
 		{
 			a = 'a';
-			while (a != 'e' + 1)
+			while (a != 'f' + 1)
 			{
 				putchar(a++);
 			}
