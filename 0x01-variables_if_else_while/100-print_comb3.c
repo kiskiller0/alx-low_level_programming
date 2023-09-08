@@ -15,7 +15,7 @@ int main(void)
 
 	while (p < '9')
 	{
-		
+
 
 		putchar(p);
 		putchar(s++);
@@ -25,7 +25,7 @@ int main(void)
 			p++;
 			s = p + 1;
 		}
-		
+
 		if (p == '9')
 		{
 			continue;
