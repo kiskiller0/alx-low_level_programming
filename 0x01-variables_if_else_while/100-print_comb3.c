@@ -9,15 +9,24 @@
  */
 int main(void)
 {
-	int a = '0';
+	int a = '1';
+	int b = '0';
 
-	while (a != '9' + 1)
+	while (b != '9' + 1)
 	{
+		putchar(b);
 		putchar(a++);
 
 		if (a == '9' + 1)
 		{
-			continue;
+			b += 1;
+			/* a = '0';*/
+			a = b;
+		}
+
+		if (b == '9' + 1)
+		{
+			break;
 		}
 
 		putchar(',');
