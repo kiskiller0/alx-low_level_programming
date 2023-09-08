@@ -7,40 +7,33 @@
  * main - this is main, what do you expect betty ?
  * Return: returns 0 on success
  */
+
 int main(void)
 {
-	int a = '1';
-	int b = '0';
+	int p = '0';
+	int s = p + 1;
 
-	while (b != '9' + 1)
+	while (p < '9')
 	{
-		putchar(b);
-		if (a == b)
-		{
-			a++;
-		}
-		else
-		{
-			putchar(a++);
-		}
+		
 
-		if (a == '9' + 1)
-		{
-			b += 1;
-			/* a = '0';*/
-			a = b;
-		}
+		putchar(p);
+		putchar(s++);
 
-		if (b == '9' + 1)
+		if (s == '9' + 1)
 		{
-			break;
+			p++;
+			s = p + 1;
+		}
+		
+		if (p == '9')
+		{
+			continue;
 		}
 
 		putchar(',');
 		putchar(' ');
 	}
-
 	putchar('\n');
-
 	return (0);
 }
