@@ -19,7 +19,8 @@ int main(void)
 		n = -n;
 	}
 
-	printf("%d\n", n%10);
+	printf("%d\n", n % 10);
+
 
 	return (0);
 }
