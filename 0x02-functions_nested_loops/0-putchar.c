@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include "_putchar.c"
 
 /**
  * main - do sth
  * Return: asdasdasdasd
  */
 
-
 void main(void)
 {
-	printf("_putchar\n");
+	char str[] = "_putchar";
+	for (int i = 0; i < 8; i++)
+		_putchar(str[i]);
 }
