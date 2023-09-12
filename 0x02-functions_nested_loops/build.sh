@@ -1,3 +1,3 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main.c 0-putchar.c 7-print_last_digit.c -o 7-last_digit
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main.c 9-times_table.c -o 9-times_table
 
-./7-last_digit
+./9-times_table

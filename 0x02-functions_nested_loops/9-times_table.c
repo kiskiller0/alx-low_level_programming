@@ -9,32 +9,33 @@ void times_table(void)
 {
 	int a, b;
 
-    a = 0;
-    b = 0;
+	a = 0;
+	b = 0;
 
-    while (a != 10)
-    {
+	while (a != 10)
+	{
 		int order;
-		order = (a*b);
+		order = (a *b);
 
 		if (order > 10)
 		{
-			putchar(order/10 + 48);
-			putchar(order%10 + 48);
+			putchar(order / 10 + 48);
+			putchar(order % 10 + 48);
 		}
 		else
 		{
-			putchar(a*b + 48);
+			putchar(a *b + 48);
 		}
+
 		putchar(' ');
 		putchar(',');
 
-        b++;
+		b++;
 
-        if (b == 10)
-        {
-            b = 0;
-            a ++;
-        }
-    }
+		if (b == 10)
+		{
+			b = 0;
+			a++;
+		}
+	}
 }
