@@ -18,7 +18,7 @@ void times_table(void)
 
 		char space;
 
-		space = '.';
+		space = ' ';
 		order = (a * b);
 
 		if (order >= 10)
