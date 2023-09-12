@@ -35,7 +35,6 @@ void times_table(void)
 		{
 			b = 0;
 			a++;
-			putchar('$');
 			putchar('\n');
 		}
 		else
