@@ -2,10 +2,10 @@
 
 /**
  * 1-alphabet - asdasdsadsad
- * print_alphabet: adsasdsadsad
+ * print_alphabet: return something ???
  */
 
-void print_alphabet()
+void print_alphabet(void)
 {
 	char a = 'a';
 
