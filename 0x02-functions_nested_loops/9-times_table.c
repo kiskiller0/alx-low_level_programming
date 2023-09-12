@@ -15,7 +15,8 @@ void times_table(void)
 	while (a != 10)
 	{
 		int order;
-		order = (a *b);
+
+		order = (a * b);
 
 		if (order > 10)
 		{
@@ -24,7 +25,7 @@ void times_table(void)
 		}
 		else
 		{
-			putchar(a *b + 48);
+			putchar(a * b + 48);
 		}
 
 		putchar(' ');
@@ -36,6 +37,7 @@ void times_table(void)
 		{
 			b = 0;
 			a++;
+			putchar('\n');
 		}
 	}
 }
