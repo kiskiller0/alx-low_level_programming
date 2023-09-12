@@ -3,7 +3,7 @@
 
 /**
  * _putchar - sadsadsadsadasd
- * Return : sdsdsdsdsd
+ * Return: sdsdsdsdsd
  */
 
 int _putchar(char c)
