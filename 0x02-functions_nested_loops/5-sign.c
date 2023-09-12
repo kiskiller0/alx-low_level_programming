@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_sign - return something ???
+ * _isalpha - return something ???
  * Return: returns 1 or 0 (bool casted to int)
  * @c: the character that the function takes
  */
 
-int print_sign(int n)
+int _isalpha(int c)
 {
-	return (n > 0? '+' : (n == 0? '0' : '-'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
