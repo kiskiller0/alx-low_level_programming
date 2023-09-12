@@ -20,11 +20,13 @@ void times_table(void)
 
 		if (order >= 10)
 		{
+			putchar(' ');
 			putchar(order / 10 + 48);
 			putchar(order % 10 + 48);
 		}
 		else
 		{
+			putchar(' ');
 			putchar(' ');
 			putchar(a * b + 48);
 		}
