@@ -16,23 +16,27 @@ void times_table(void)
 	{
 		int order;
 
+		char space;
+
+		space = '.';
 		order = (a * b);
 
 		if (order >= 10)
 		{
-			putchar(' ');
+			putchar(space);
 			putchar(order / 10 + 48);
 			putchar(order % 10 + 48);
 		}
 		else
 		{
-			putchar(' ');
-			putchar(' ');
+			if (b != 0)
+			{
+				putchar(space);
+				putchar(space);
+			}
 			putchar(a * b + 48);
 		}
-
 		b++;
-
 		if (b == 10)
 		{
 			b = 0;
@@ -40,8 +44,6 @@ void times_table(void)
 			putchar('\n');
 		}
 		else
-		{
 			putchar(',');
-		}
 	}
 }
