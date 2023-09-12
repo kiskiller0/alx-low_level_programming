@@ -1,3 +1,3 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main.c 9-times_table.c -o 9-times_table
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main.c 11-print_to_98.c -o 11-98
 
-./9-times_table
+./11-98
