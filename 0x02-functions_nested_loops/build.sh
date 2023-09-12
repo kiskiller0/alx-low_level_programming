@@ -1,2 +1,2 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-putchar.c -o 0-putchar
-./0-putchar
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main.c 4-isalpha.c -o 4-isalpha
+./4-isalpha
