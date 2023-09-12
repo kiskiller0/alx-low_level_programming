@@ -18,18 +18,16 @@ void times_table(void)
 
 		order = (a * b);
 
-		if (order > 10)
+		if (order >= 10)
 		{
 			putchar(order / 10 + 48);
 			putchar(order % 10 + 48);
 		}
 		else
 		{
+			putchar(' ');
 			putchar(a * b + 48);
 		}
-
-		putchar(' ');
-		putchar(',');
 
 		b++;
 
@@ -37,7 +35,13 @@ void times_table(void)
 		{
 			b = 0;
 			a++;
+			putchar('$');
 			putchar('\n');
+		}
+		else
+		{
+			putchar(',');
+			putchar(' ');
 		}
 	}
 }
