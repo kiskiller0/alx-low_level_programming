@@ -30,6 +30,7 @@ void times_table(void)
 		}
 
 		b++;
+		putchar(' ');
 
 		if (b == 10)
 		{
@@ -41,6 +42,5 @@ void times_table(void)
 		{
 			putchar(',');
 		}
-        putchar(' ');
 	}
 }
