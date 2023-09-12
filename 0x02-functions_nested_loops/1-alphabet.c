@@ -2,7 +2,7 @@
 
 /**
  * 1-alphabet - asdasdsadsad
- * print_alphabet: return something ???
+ * print_alphabet - return something ???
  */
 
 void print_alphabet(void)
