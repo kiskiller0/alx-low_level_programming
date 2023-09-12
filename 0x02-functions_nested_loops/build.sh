@@ -1,3 +1,3 @@
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main.c 6-abs.c -o 6-abs
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main.c 7-print_last_digit.c -o 7-last_digit
 
-./6-abs
+./7-last_digit

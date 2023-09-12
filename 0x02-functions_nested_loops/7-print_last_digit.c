@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_last_digit - return something ???
  * Return: returns 1 or 0 (bool casted to int)
@@ -8,5 +8,9 @@
 
 int print_last_digit(int n)
 {
-	putchar(n % 10 + 48);
+	int last_digit;
+
+	last_digit = n % 10 + 48;
+	_putchar(last_digit);
+	return (last_digit);
 }
