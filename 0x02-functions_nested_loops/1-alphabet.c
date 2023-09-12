@@ -7,6 +7,11 @@
 
 void print_alphabet(void)
 {
+
+	/**
+	 * print_alphabet - print all the letters of the alphabet
+	 */
+
 	char a = 'a';
 
 	while (a != 'z' + 1)
