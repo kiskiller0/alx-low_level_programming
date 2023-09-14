@@ -27,8 +27,8 @@ int main(void)
 
 		if (!is_fb)
 			printf("%d", i);
-
-		putchar(' ');
+		if (i != 100)
+			putchar(' ');
 	}
 	putchar('\n');
 
