@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- *print_squar - tiply
+ *print_square - tiply
  *@size: arg
  *Return: a*b
  */
