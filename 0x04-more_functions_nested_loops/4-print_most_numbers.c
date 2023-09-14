@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * print_numbers - tiply
+ * print_most_numbers - tiply
  * Return: a*b
  */
 
@@ -16,7 +16,7 @@ void print_most_numbers(void)
 	{
 		if (a == '2' || a == '4')
 		{
-			a ++;
+			a++;
 			continue;
 		}
 		_putchar(a++);
