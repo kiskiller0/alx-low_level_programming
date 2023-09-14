@@ -4,6 +4,10 @@
  * more_numbers - tiply
  * Return: a*b
  */
+void my_print(char c)
+{
+	_putchar(c);
+}
 
 void more_numbers(void)
 {
@@ -18,16 +22,16 @@ void more_numbers(void)
 		while (a < 15)
 		{
 			if (a < 10)
-				_putchar(a + 48);
+				my_print(a + 48);
 			else
 			{
-				_putchar(a / 10 + 48);
-				_putchar(a % 10 + 48);
+				my_print(a / 10 + 48);
+				my_print(a % 10 + 48);
 			}
 			a++;
 		}
 
-		_putchar('\n');
+		my_print('\n');
 	}
 }
 
