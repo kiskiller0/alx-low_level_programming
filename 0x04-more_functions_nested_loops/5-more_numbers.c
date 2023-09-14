@@ -15,7 +15,7 @@ void more_numbers(void)
 
 		a = 0;
 
-		while (a < 15)
+		while (a++ < 15)
 		{
 			if (a < 10)
 				_putchar(a + 48);
