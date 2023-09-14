@@ -5,11 +5,6 @@
  *Return: a*b
  */
 
-/**
- *my_print - lol
- *@c: char c
- * Return: void
- */
 void more_numbers(void)
 {
 	int i, j;
