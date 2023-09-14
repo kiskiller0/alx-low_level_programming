@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- *print_square - tiply
- *@size: arg
+ *main - tiply
  *Return: a*b
  */
 
@@ -31,5 +30,8 @@ int main(void)
 
 		putchar(' ');
 	}
+	putchar('\n');
+
+	return (0);
 }
 
