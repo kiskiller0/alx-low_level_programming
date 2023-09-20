@@ -2,12 +2,14 @@
 
 /**
  *_strcat - asdasdsa
+ *@dest: the string to src to
+ *@src: the string to add
  *Return: nada
  */
 
 char *_strcat(char *dest, char *src)
 {
-	char* head;
+	char *head;
 
 	head = dest;
 
