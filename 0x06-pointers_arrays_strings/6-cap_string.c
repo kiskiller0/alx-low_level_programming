@@ -20,7 +20,7 @@ char *cap_string(char *str)
 
 	while (*str != '\0')
 	{
-		if (*str == ' ' || *str == '\t' || *str == '\n' || *str == '.') 
+		if (*str == ' ' || *str == '\t' || *str == '\n' || *str == '.')
 		{
 			previous_is_space = 1;
 			str++;
