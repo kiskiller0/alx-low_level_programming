@@ -14,5 +14,8 @@ int main(void)
     printf("%d\n", _strcmp(s1, s2));
     printf("%d\n", _strcmp(s2, s1));
     printf("%d\n", _strcmp(s1, s1));
+    printf("%d\n", _strcmp("abc", "abc")); /* expects 0 */
+    printf("%d\n", _strcmp("abc", "abcd")); /* expects -15 */
+    printf("%d\n", _strcmp("abcd", "abc")); /* expects 15 */
     return (0);
 }
