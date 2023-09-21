@@ -9,16 +9,25 @@
 char *rot13(char *str)
 {
 	char *head, *s;
+	char *arr1, *arr2;
+	int i;
+
+	arr1 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	arr2 = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	head = str;
 	s = str;
 
 	while (*s != '\0')
 	{
-		if (*s + 13 > 'z' || (*s < 'a' && *s + 13 > 'Z'))
-			*s -= ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z')) ? 13 : 0;
-		else
-			*s += ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z')) ? 13 : 0;
+		for (i = 0; i < 52; i++)
+		{
+			if (arr1[i] == *str)
+			{
+				*str = arr2[i];
+				break;
+			}
+		}
 
 		s++;
 	}
