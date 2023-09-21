@@ -37,7 +37,9 @@ void print_number(int n)
 		if (number)
 			number -= current_digit * divisor;
 		else
-			_putchar('0');
+		{
+			break;
+		}
 
 		_putchar(current_digit + '0');
 
