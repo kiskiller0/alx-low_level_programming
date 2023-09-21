@@ -13,14 +13,9 @@ void print_number(int n)
 
 	if (n < 0)
 		_putchar('-');
-	if (!n)
-	{
-		_putchar('0');
-		return;
-	}
 
-	number = n < 0 ? -n : n;
 	n = n < 0 ? -n : n;
+	number = n;
 	order = 0;
 	divisor = 1;
 
