@@ -8,18 +8,19 @@
 
 char *rot13(char *str)
 {
-	char *head;
+	char *head, *s;
 
 	head = str;
+	s = str;
 
-	while (*str != '\0')
+	while (*s != '\0')
 	{
-		if (*str + 13 > 'z' || (*str < 'a' && *str + 13 > 'Z'))
-			*str -= 13;
+		if (*s + 13 > 'z' || (*s < 'a' && *s + 13 > 'Z'))
+			*s -= ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z')) ? 13 : 0;
 		else
-			*str += 13;
+			*s += ((*s >= 'a' && *s <= 'z') || (*s >= 'A' && *s <= 'Z')) ? 13 : 0;
 
-		str++;
+		s++;
 	}
 
 	return (head);
