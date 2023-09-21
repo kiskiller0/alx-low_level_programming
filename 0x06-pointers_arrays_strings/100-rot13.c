@@ -22,9 +22,9 @@ char *rot13(char *str)
 	{
 		for (i = 0; i < 52; i++)
 		{
-			if (arr1[i] == *str)
+			if (arr1[i] == *s)
 			{
-				*str = arr2[i];
+				*s = arr2[i];
 				break;
 			}
 		}
