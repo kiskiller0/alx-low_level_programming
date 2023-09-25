@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * *_strspn - find a char
+ * *_strspn - length of prefix of s that is composed of chars in accept
  * @s: string to where to search
- * @c: char to find
+ * @accept: set of allowed chars
  *
  * Return: a pointer to the first occurrence
  */
@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == *i)
 			{
-				matches ++;
+				matches++;
 				found = 1;
 				continue;
 			}
@@ -32,7 +32,7 @@ unsigned int _strspn(char *s, char *accept)
 		if (!found)
 			return (matches);
 	}
-	
+
 	return (matches);
 }
 
