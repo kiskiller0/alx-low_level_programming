@@ -1,27 +1,32 @@
-
-
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strchr - look for c in s
- *@s: the string
- *@c: the char
- *Return: the memory location of s
+ * *_strchr - find a char
+ * @s: string to where to search
+ * @c: char to find
+ *
+ * Return: a pointer to the first occurrence
  */
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	int a;
+
+
+	while (1)
 	{
-		if (*s == c)
+		a = *s++;
+
+		if (a == c)
 		{
-			return (s);
+			return (s - 1);
 		}
 
-		s++;
+		if (a == '\0')
+		{
+			return (NULL);
+		}
 	}
-
-	return (NULL);
 }
 
