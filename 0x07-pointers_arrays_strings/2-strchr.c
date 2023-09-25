@@ -1,5 +1,5 @@
 
-
+#include <stddef.h>
 
 #include "main.h"
 
@@ -22,6 +22,6 @@ char *_strchr(char *s, char c)
 		s++;
 	}
 
-	return ((char *)0);
+	return (NULL);
 }
 
