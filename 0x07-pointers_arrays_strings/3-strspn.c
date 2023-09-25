@@ -33,6 +33,6 @@ unsigned int _strspn(char *s, char *accept)
 			return (matches);
 	}
 	
-	return (0);
+	return (matches);
 }
 
