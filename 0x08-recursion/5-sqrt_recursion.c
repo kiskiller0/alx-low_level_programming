@@ -10,7 +10,7 @@
 int square(int n, int i)
 {
 	if (i == n)
-		return (-1);
+		return (1);
 	if (i * i == n)
 		return (i);
 	else if (i * i > n)
