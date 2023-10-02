@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		{
 			j++;
 		}
-		else 
+		else
 		{
 			money -= change[j];
 			num++;
