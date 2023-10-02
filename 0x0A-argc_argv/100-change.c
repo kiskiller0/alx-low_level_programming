@@ -14,12 +14,18 @@ int main(int argc, char *argv[])
 	int j, num, money;
 	int change[] = {25, 10, 5, 2, 1};
 
-	argc += 0;
+	if (argc != 1)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	j = 0;
 	num = 0;
 	money = strtol(argv[1], 0, 10);
 
+	printf("money = %d\n", money);
 	if (money <= 0)
+
 	{
 		printf("0\n");
 		return (1);
