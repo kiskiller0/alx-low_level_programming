@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -32,7 +30,7 @@ int main(int argc, char *argv[])
 		{
 			if (*ptr > '9' || *ptr < 0)
 			{
-				printf("Error");
+				printf("Error\n");
 				return (1);
 			}
 
@@ -44,6 +42,6 @@ int main(int argc, char *argv[])
 
 	printf("%ld\n", sum);
 
-	return (0);
+	return (sum);
 }
 
