@@ -7,7 +7,17 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%s\n", argv[0]);
+	char *ptr;
+
+	ptr = argv[0];
+
+	while (*ptr)
+	{
+		_putchar(*ptr);
+		ptr++;
+	}
+
+	_putchar('\n');
 	return (0);
 }
 
