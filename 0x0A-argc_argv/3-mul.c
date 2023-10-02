@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("error\n");
-		return (0);
+		return (1);
 	}
 
 	printf("%d\n", (*argv[1] - '0') * (*argv[2] - '0'));
