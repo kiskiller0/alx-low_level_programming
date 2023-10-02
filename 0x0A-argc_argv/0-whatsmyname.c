@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * main - print program name + \n
  * @argc: arguments count
@@ -7,17 +7,9 @@
  */
 int main(int argc, char *argv[])
 {
-	char *ptr;
+	argc = argc - 1 + 1;
 
-	ptr = argv[0];
-
-	while (*ptr)
-	{
-		_putchar(*ptr);
-		ptr++;
-	}
-
-	_putchar('\n');
+	printf("%s\n", argv[0]);
 	return (0);
 }
 
