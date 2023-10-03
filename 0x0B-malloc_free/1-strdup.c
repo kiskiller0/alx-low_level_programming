@@ -16,6 +16,9 @@ char *_strdup(char *str)
 	unsigned int size_str;
 	char *head;
 
+	if (!str)
+		return (str);
+
 	head = str;
 	size_str = 0;
 
@@ -30,8 +33,7 @@ char *_strdup(char *str)
 
 	if (!arr)
 		return (arr);
-	if (!str)
-		return (str);
+	
 
 	while (*str)
 	{
