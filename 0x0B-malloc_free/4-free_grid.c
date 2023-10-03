@@ -4,12 +4,11 @@
 /**
 * free_grid - sadsadasd
 * @grid: sdsdad
-* @width: sdsdad
 * @height: sdasdasdasd
 * Return: Vasdasdsadasdasd
 */
 
-void free_grid(int **grid, int width, int height)
+void free_grid(int **grid, int height)
 {
 	int x, y;
 
