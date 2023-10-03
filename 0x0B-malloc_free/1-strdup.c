@@ -19,13 +19,13 @@ char *_strdup(char *str)
 	head = str;
 	size_str = 0;
 
-	while (head)
+	while (*head)
 	{
 		size_str++;
 		head++;
 	}
 
-	arr = (char *) malloc(sizeof(char) size_star + 1);
+	arr = (char *) malloc(sizeof(char) * size_str + 1);
 	head = arr;
 
 	if (!arr)
