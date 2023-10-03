@@ -12,6 +12,9 @@ char *argstostr(int ac, char **av)
 	int length, i, j;
 	char *all_args, *head;
 
+	if (!ac || !av)
+		return (NULL);
+
 	length = 0;
 
 	for (i = 0; i < ac; i++)
