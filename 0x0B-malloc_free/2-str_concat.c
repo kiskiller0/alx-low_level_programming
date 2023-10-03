@@ -18,22 +18,27 @@ char *str_concat(char *s1, char *s2)
 	head = s1;
 	head2 = s2;
 
-	for (count = 0; *head; count++)
-		head++;
-	for (; *head2; count++)
-		head2++;
+	if (head)
+		for (count = 0; *head; count++)
+			head++;
+	if (head2)
+		for (; *head2; count++)
+			head2++;
 
 	arr = (char *) malloc(sizeof(char) * count + 1);
 	head3 = arr;
 	if (!arr)
 		return (arr);
-
-	for (; *s1; arr++)
-		*arr = *(s1++);
-	for (; *s2; arr++)
-		*arr = *(s2++);
+	if (s1)
+		for (; *s1; arr++)
+			*arr = *(s1++);
+	if (s2)
+		for (; *s2; arr++)
+			*arr = *(s2++);
 
 	*arr = 0;
+	if (!count)
+		return (0);
 
 	return (head3);
 }
