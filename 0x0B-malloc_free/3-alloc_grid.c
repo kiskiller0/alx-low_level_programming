@@ -1,45 +1,41 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * alloc_grid - cp a string to a new location n return a pointer
- * @width: the string to copy
- * @height: the string to copy
- * Return: a ptr
- */
+* alloc_grid - sadsadasd
+* @width: sdsdad
+* @height: sdasdasdasd
+* Return: Vasdasdsadasdasd
+*/
 
 int **alloc_grid(int width, int height)
 {
-	int **arr, i, j;
+	int **arrrrr;
+	int x, y;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	arr = (int **) malloc(sizeof(int *) * width);
-	if (!arr)
-	{
-		free(arr);
+	arrrrr = malloc(sizeof(int *) * height);
+	if (arrrrr == NULL)
 		return (NULL);
-	}
 
-	for (i = 0; i < width; i++)
+	for (x = 0; x < height; x++)
 	{
-		arr[i] = (int *) malloc(sizeof(int) * height);
-		if (!arr[i])
+		arrrrr[x] = malloc(sizeof(int) * width);
+		if (arrrrr[x] == NULL)
 		{
-			free(arr[i]);
+			for (; x >= 0; x--)
+				free(arrrrr[x]);
+			free(arrrrr);
 			return (NULL);
 		}
 	}
 
-	for (i = 0; i < width; i++)
+	for (x = 0; x < height; x++)
 	{
-		for (j = 0; j < height; j++)
-		{
-			arr[i][j] = 0;
-		}
+		for (y = 0; y < width; y++)
+			arrrrr[x][y] = 0;
 	}
-
-	return (arr);
+	return (arrrrr);
 }
 
