@@ -30,6 +30,8 @@ char *_strdup(char *str)
 
 	if (!arr)
 		return (arr);
+	if (!str)
+		return (str);
 
 	while (*str)
 	{
