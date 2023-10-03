@@ -1,3 +1,4 @@
 clear
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-alloc_grid.c -o g
-./g
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-argstostr.c -o args
+./args I will "show you" how great 
+

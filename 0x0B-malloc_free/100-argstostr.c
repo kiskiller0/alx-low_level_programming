@@ -7,7 +7,7 @@
  *@av: asdsadsad
  *Return: asdsadsad
  */
-char *argstostr(int ac, char **av);
+char *argstostr(int ac, char **av)
 {
 	int length, i, j;
 	char *all_args, *head;
@@ -34,7 +34,7 @@ char *argstostr(int ac, char **av);
 			all_args++;
 		}
 
-		*all_args = ' ';
+		*all_args = '\n';
 		all_args++;
 	}
 
