@@ -24,7 +24,7 @@ char *argstostr(int ac, char **av)
 		length++;
 	}
 
-	all_args = (char *) malloc(sizeof(char) * length);
+	all_args = (char *) malloc(sizeof(char) * length + 1);
 	head = all_args;
 
 	for (i = 0; i < ac; i++)
@@ -38,7 +38,7 @@ char *argstostr(int ac, char **av)
 		all_args++;
 	}
 
-	*(all_args - 1) = 0;
+	*(all_args) = 0;
 	return (head);
 }
 
