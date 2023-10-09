@@ -27,19 +27,25 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!ptr_result)
 		return (NULL);
 
-	for (ptr_s1 = s1; *ptr_s1; ptr_s1++)
+	if (ptr_s1)
 	{
-		*ptr_result = *ptr_s1;
-		ptr_result++;
+		for (ptr_s1 = s1; *ptr_s1; ptr_s1++)
+		{
+			*ptr_result = *ptr_s1;
+			ptr_result++;
+		}
 	}
 
 	ptr_s2 = s2;
 
-	for (counter = 0; counter < n && *ptr_s2; counter++)
+	if (ptr_s2)
 	{
-		*ptr_result = *ptr_s2;
-		ptr_result++;
-		ptr_s2++;
+		for (counter = 0; counter < n && *ptr_s2; counter++)
+		{
+			*ptr_result = *ptr_s2;
+			ptr_result++;
+			ptr_s2++;
+		}
 	}
 
 	*ptr_result = 0;
