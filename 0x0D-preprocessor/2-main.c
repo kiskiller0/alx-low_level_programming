@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print the name of this file
- * Return - 0 in success, 1 otherwise
+ * Return: 0 in success, 1 otherwise
 */
 int main(void)
 {
