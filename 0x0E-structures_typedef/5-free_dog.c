@@ -1,7 +1,7 @@
-
 #include "dog.h"
 #include <stdlib.h>
 #include <stdio.h>
+
 /**
  * free_dog - asdsad
  * @d: asdd
@@ -13,7 +13,7 @@ void free_dog(dog_t *d)
 {
 
 	if (!d)
-		return (NULL);
+		return;
 
 	free(d->owner);
 	free(d->name);
