@@ -32,7 +32,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	scooby->name = malloc(sizeof(char) * ncount);
 	scooby->owner = malloc(sizeof(char) * ocount);
 
-	if (!scooby)
+	if (!scooby->name)
+		return (NULL);
+
+	if (!scooby->owner)
 		return (NULL);
 
 	scooby->age = age;
