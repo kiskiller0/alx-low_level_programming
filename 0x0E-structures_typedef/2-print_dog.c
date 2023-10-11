@@ -4,9 +4,6 @@
 /**
  * print_dog - asdsad
  * @d: asdd
- * @name: asdsad
- * @owner: sdd
- * @age: sdd
  */
 
 
