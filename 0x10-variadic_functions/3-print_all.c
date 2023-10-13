@@ -64,9 +64,11 @@ void print_arg(va_list args, char format)
 				buffer = va_arg(args, char *);
 
 				if (buffer)
+				{
 					printf("%s", buffer);
-				else
-					printf("(nil)");
+					break;
+				}
+				printf("(nil)");
 
 				break;
 
