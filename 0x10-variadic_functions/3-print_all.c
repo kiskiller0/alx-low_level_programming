@@ -21,9 +21,6 @@ void print_all(const char * const format, ...)
 
 	current_letter = 0;
 
-	if (!format)
-		return;
-
 	while (format[current_letter] != 0)
 	{
 		print_arg(args, format[current_letter]);
