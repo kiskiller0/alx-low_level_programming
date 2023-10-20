@@ -2,6 +2,7 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 /**
  * add_node - prints all nodes in a llist
@@ -12,7 +13,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
-	list_t *tmp;
+	size_t len;
 
 	new_node = malloc(sizeof(list_t));
 
@@ -20,7 +21,11 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	new_node->str = strdup(str);
+	for (len = 0; *str; str++)
+		len++;
+
 	new_node->next = *head;
+	new_node->len = len;
 	*head = new_node;
 
 	return (new_node);
