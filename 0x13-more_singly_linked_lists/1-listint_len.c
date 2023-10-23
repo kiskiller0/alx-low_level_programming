@@ -1,17 +1,15 @@
+
 #include <stdio.h>
 
 /**
- * print_listint - asdasd
+ * listint_len - asdasd
  * @h: the head of the nodes
  * Return: the number of nodes
  */
 
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	if (h)
-	{
-		printf("%d\n", h->n);
 		return (1 + print_listint(h->next));
-	}
 	return (0);
 }
