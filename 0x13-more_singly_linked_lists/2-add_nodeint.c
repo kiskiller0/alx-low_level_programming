@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "lists.h"
 /**
  * add_nodeint - asdasd
  * @head: the head of the nodes
