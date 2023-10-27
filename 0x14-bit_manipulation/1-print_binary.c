@@ -1,37 +1,28 @@
 #include "main.h"
-
 /**
  * print_binary - turn bin number to an unsigned int
- * @b: the number in string form
- * Return: u_int
+ * @n: the number in string form
+ * Return: nothing
  */
+
 
 void print_binary(unsigned long int n)
 {
-	unsigned int index;
+	int bits = sizeof(n) * 8, done = 0;
 
-	for (index = 0; pow(2, index) <= n; index ++)
-		;
-
-
-	index--;
-
-	while (index)
+	while (bits)
 	{
-		if (pow(2, index) > n)
+		if (n & 1L << --bits)
 		{
-			index--;
-			putchar('0');
-			continue;
+			_putchar('1');
+			done++;
 		}
-
-		_putchar('1');
-		n -= pow(2, index);
-		index--;
+		else if (done)
+			_putchar('0');
 	}
 
-	if (n == 1)
-		_putchar('1');
-	else
+	if (!done)
+	{
 		_putchar('0');
+	}
 }
