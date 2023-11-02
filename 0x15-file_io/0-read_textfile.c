@@ -17,7 +17,7 @@ size_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	for (count = 0; (c = fgetc(f)) != EOF && count != letters; count++)
-		putchar(c);
+		_putchar(c);
 
 	return (count);
 }
