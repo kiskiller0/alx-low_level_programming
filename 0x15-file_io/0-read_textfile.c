@@ -9,9 +9,9 @@
 
 size_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *f = fopen(filename, "r");
-	char c;
-	size_t count;
+	size_t b;
+	int file_desc;
+	char buffer[READ_BUF_SIZE * 8];
 
 	if (!f || !letters)
 		return (0);
