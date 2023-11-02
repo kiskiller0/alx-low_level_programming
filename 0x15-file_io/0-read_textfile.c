@@ -9,16 +9,21 @@
 
 size_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *f = fopen(filename, "r");
-	char c;
-	size_t count;
+	int file;
+	ssize_t b;
+	char buffer[READ_BUF_SIZE * 8];
 
-	if (!f || !letters || !filename)
+	if (!filename || !letters)
+		return (0);
+	
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 		return (0);
 
-	for (count = 0; (c = fgetc(f)) != EOF && count != letters; count++)
-		_putchar(c);
+	b = read(file, buffer, letters);
+	b = write(STDOUT_FILENO, buffer, b);
+	close(fd);	
 
-	return (count);
+	return (b);
 }
 
